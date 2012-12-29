@@ -56,7 +56,7 @@
             // 
             // mainFormStyleManager
             // 
-            this.mainFormStyleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
+            this.mainFormStyleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2010Black;
             this.mainFormStyleManager.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(163)))), ((int)(((byte)(26))))));
             // 
             // schdedulerCalendar
@@ -95,7 +95,7 @@
             this.toolStripSeparator2,
             this.改变视图ToolStripMenuItem});
             this.schedulerContextMenuStrip.Name = "contextMenuStrip1";
-            this.schedulerContextMenuStrip.Size = new System.Drawing.Size(153, 148);
+            this.schedulerContextMenuStrip.Size = new System.Drawing.Size(147, 126);
             // 
             // calendarImageList
             // 
@@ -244,18 +244,18 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // tsmiNewAppointment
             // 
             this.tsmiNewAppointment.Image = global::Scheduler.Properties.Resources.newAppointment;
             this.tsmiNewAppointment.Name = "tsmiNewAppointment";
-            this.tsmiNewAppointment.Size = new System.Drawing.Size(152, 22);
+            this.tsmiNewAppointment.Size = new System.Drawing.Size(146, 22);
             this.tsmiNewAppointment.Text = "新约会";
             this.tsmiNewAppointment.Click += new System.EventHandler(this.tsmiNewAppointment_Click);
             // 
@@ -263,21 +263,21 @@
             // 
             this.dsaToolStripMenuItem1.Image = global::Scheduler.Properties.Resources.newAllDayEvent;
             this.dsaToolStripMenuItem1.Name = "dsaToolStripMenuItem1";
-            this.dsaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dsaToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
             this.dsaToolStripMenuItem1.Text = "全天事件";
             // 
             // 转到今天ToolStripMenuItem
             // 
             this.转到今天ToolStripMenuItem.Image = global::Scheduler.Properties.Resources.gotoToday;
             this.转到今天ToolStripMenuItem.Name = "转到今天ToolStripMenuItem";
-            this.转到今天ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.转到今天ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.转到今天ToolStripMenuItem.Text = "转到今天";
             // 
             // 转到指定日期ToolStripMenuItem
             // 
             this.转到指定日期ToolStripMenuItem.Image = global::Scheduler.Properties.Resources.gotoTheDay;
             this.转到指定日期ToolStripMenuItem.Name = "转到指定日期ToolStripMenuItem";
-            this.转到指定日期ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.转到指定日期ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.转到指定日期ToolStripMenuItem.Text = "转到指定日期";
             // 
             // 改变视图ToolStripMenuItem
@@ -289,31 +289,31 @@
             this.时间线视图ToolStripMenuItem});
             this.改变视图ToolStripMenuItem.Image = global::Scheduler.Properties.Resources.changeView;
             this.改变视图ToolStripMenuItem.Name = "改变视图ToolStripMenuItem";
-            this.改变视图ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.改变视图ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.改变视图ToolStripMenuItem.Text = "改变视图";
             // 
             // 日视图ToolStripMenuItem
             // 
             this.日视图ToolStripMenuItem.Name = "日视图ToolStripMenuItem";
-            this.日视图ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.日视图ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.日视图ToolStripMenuItem.Text = "日视图";
             // 
             // 周视图ToolStripMenuItem
             // 
             this.周视图ToolStripMenuItem.Name = "周视图ToolStripMenuItem";
-            this.周视图ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.周视图ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.周视图ToolStripMenuItem.Text = "周视图";
             // 
             // 月视图ToolStripMenuItem
             // 
             this.月视图ToolStripMenuItem.Name = "月视图ToolStripMenuItem";
-            this.月视图ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.月视图ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.月视图ToolStripMenuItem.Text = "月视图";
             // 
             // 时间线视图ToolStripMenuItem
             // 
             this.时间线视图ToolStripMenuItem.Name = "时间线视图ToolStripMenuItem";
-            this.时间线视图ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.时间线视图ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.时间线视图ToolStripMenuItem.Text = "时间线视图";
             // 
             // MainForm

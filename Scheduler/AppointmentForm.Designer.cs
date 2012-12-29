@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppointmentForm));
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
@@ -35,11 +36,12 @@
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.richTextBoxEx1 = new DevComponents.DotNetBar.Controls.RichTextBoxEx();
             this.tbxSubject = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.textBoxX2 = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.tbxLocation = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.dateTimeInputStart = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.dateTimeInputEnd = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
-            this.buttonX1 = new DevComponents.DotNetBar.ButtonX();
-            this.buttonX2 = new DevComponents.DotNetBar.ButtonX();
+            this.btnxOk = new DevComponents.DotNetBar.ButtonX();
+            this.btnxCancel = new DevComponents.DotNetBar.ButtonX();
+            this.buttonCommand = new DevComponents.DotNetBar.Command(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEnd)).BeginInit();
             this.SuspendLayout();
@@ -117,17 +119,17 @@
             this.tbxSubject.TabIndex = 2;
             this.tbxSubject.TextChanged += new System.EventHandler(this.tbxSubject_TextChanged);
             // 
-            // textBoxX2
+            // tbxLocation
             // 
             // 
             // 
             // 
-            this.textBoxX2.Border.Class = "TextBoxBorder";
-            this.textBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxX2.Location = new System.Drawing.Point(80, 39);
-            this.textBoxX2.Name = "textBoxX2";
-            this.textBoxX2.Size = new System.Drawing.Size(612, 21);
-            this.textBoxX2.TabIndex = 2;
+            this.tbxLocation.Border.Class = "TextBoxBorder";
+            this.tbxLocation.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.tbxLocation.Location = new System.Drawing.Point(80, 39);
+            this.tbxLocation.Name = "tbxLocation";
+            this.tbxLocation.Size = new System.Drawing.Size(612, 21);
+            this.tbxLocation.TabIndex = 2;
             // 
             // dateTimeInputStart
             // 
@@ -235,38 +237,47 @@
             this.dateTimeInputEnd.TabIndex = 3;
             this.dateTimeInputEnd.TimeSelectorTimeFormat = DevComponents.Editors.DateTimeAdv.eTimeSelectorFormat.Time24H;
             // 
-            // buttonX1
+            // btnxOk
             // 
-            this.buttonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX1.Location = new System.Drawing.Point(13, 295);
-            this.buttonX1.Name = "buttonX1";
-            this.buttonX1.Size = new System.Drawing.Size(120, 30);
-            this.buttonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX1.TabIndex = 4;
-            this.buttonX1.Text = "保存";
+            this.btnxOk.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnxOk.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnxOk.Command = this.buttonCommand;
+            this.btnxOk.CommandParameter = "save";
+            this.btnxOk.Location = new System.Drawing.Point(13, 295);
+            this.btnxOk.Name = "btnxOk";
+            this.btnxOk.Size = new System.Drawing.Size(120, 30);
+            this.btnxOk.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnxOk.TabIndex = 4;
+            this.btnxOk.Text = "保存";
             // 
-            // buttonX2
+            // btnxCancel
             // 
-            this.buttonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.buttonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.buttonX2.Location = new System.Drawing.Point(144, 294);
-            this.buttonX2.Name = "buttonX2";
-            this.buttonX2.Size = new System.Drawing.Size(120, 30);
-            this.buttonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonX2.TabIndex = 5;
-            this.buttonX2.Text = "取消";
+            this.btnxCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnxCancel.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnxCancel.Command = this.buttonCommand;
+            this.btnxCancel.CommandParameter = "cancel";
+            this.btnxCancel.Location = new System.Drawing.Point(139, 295);
+            this.btnxCancel.Name = "btnxCancel";
+            this.btnxCancel.Size = new System.Drawing.Size(120, 30);
+            this.btnxCancel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnxCancel.TabIndex = 5;
+            this.btnxCancel.Text = "取消";
+            // 
+            // buttonCommand
+            // 
+            this.buttonCommand.Name = "buttonCommand";
+            this.buttonCommand.Executed += new System.EventHandler(this.buttonCommand_Executed);
             // 
             // AppointmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 336);
-            this.Controls.Add(this.buttonX2);
-            this.Controls.Add(this.buttonX1);
+            this.Controls.Add(this.btnxCancel);
+            this.Controls.Add(this.btnxOk);
             this.Controls.Add(this.dateTimeInputEnd);
             this.Controls.Add(this.dateTimeInputStart);
-            this.Controls.Add(this.textBoxX2);
+            this.Controls.Add(this.tbxLocation);
             this.Controls.Add(this.tbxSubject);
             this.Controls.Add(this.richTextBoxEx1);
             this.Controls.Add(this.labelX4);
@@ -296,10 +307,11 @@
         private DevComponents.DotNetBar.LabelX labelX4;
         private DevComponents.DotNetBar.Controls.RichTextBoxEx richTextBoxEx1;
         private DevComponents.DotNetBar.Controls.TextBoxX tbxSubject;
-        private DevComponents.DotNetBar.Controls.TextBoxX textBoxX2;
+        private DevComponents.DotNetBar.Controls.TextBoxX tbxLocation;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeInputStart;
         private DevComponents.Editors.DateTimeAdv.DateTimeInput dateTimeInputEnd;
-        private DevComponents.DotNetBar.ButtonX buttonX1;
-        private DevComponents.DotNetBar.ButtonX buttonX2;
+        private DevComponents.DotNetBar.ButtonX btnxOk;
+        private DevComponents.DotNetBar.ButtonX btnxCancel;
+        private DevComponents.DotNetBar.Command buttonCommand;
     }
 }

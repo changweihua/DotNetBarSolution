@@ -56,7 +56,18 @@ namespace Scheduler
             //MessageBox.Show(this.schdedulerCalendar.DateSelectionStart.ToString());
             DateTime? start = this.schdedulerCalendar.DateSelectionStart;
             DateTime? end = this.schdedulerCalendar.DateSelectionEnd; 
-            new AppointmentForm(start, end).ShowDialog();
+            DialogResult dr = new AppointmentForm(start, end).ShowDialog();
+            //关闭Glass效果，实现皮肤
+            //MessageBoxEx.EnableGlass = false;
+            MessageBoxEx.EnableGlass = false;
+            if (dr == DialogResult.Cancel)
+            {
+                MessageBoxEx.Show(this, "用户放弃", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (dr == DialogResult.OK)
+            {
+                MessageBoxEx.Show(this, "用户保存", "信息提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }

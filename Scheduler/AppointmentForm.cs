@@ -44,5 +44,32 @@ namespace Scheduler
 
         #endregion
 
+        #region Command处理
+
+        /// <summary>
+        /// 按钮命令
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonCommand_Executed(object sender, EventArgs e)
+        {
+            string parameter = (sender as ButtonX).CommandParameter == null ? "" : (sender as ButtonX).CommandParameter.ToString();
+            switch (parameter)
+            {
+                case "save":
+                    this.DialogResult = DialogResult.OK;
+                    break;
+                case "cancel":
+                    this.DialogResult = DialogResult.Cancel;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        #endregion
+
+        
+
     }
 }
