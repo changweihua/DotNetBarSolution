@@ -160,7 +160,19 @@ namespace Scheduler
             this.schdedulerCalendar.SelectedView = DevComponents.DotNetBar.Schedule.eCalendarView.TimeLine;
         }
 
+        /// <summary>
+        /// 跳转到指定日期
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsmiGotoDefinedDay_Click(object sender, EventArgs e)
+        {
+            new ChooseDateForm().ShowDialog(this);
+        }
+
         #endregion
+
+        
 
     }
 }

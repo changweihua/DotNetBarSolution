@@ -130,6 +130,7 @@
             this.tsmiGotoDefinedDay.Name = "tsmiGotoDefinedDay";
             this.tsmiGotoDefinedDay.Size = new System.Drawing.Size(152, 22);
             this.tsmiGotoDefinedDay.Text = "转到指定日期";
+            this.tsmiGotoDefinedDay.Click += new System.EventHandler(this.tsmiGotoDefinedDay_Click);
             // 
             // toolStripSeparator2
             // 
