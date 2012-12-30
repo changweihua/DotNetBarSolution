@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>NLite</id>
+    <version>0.9.5.3</version>
+    <title>NLite</title>
+    <authors>netcasewqs</authors>
+    <owners>netcasewqs</owners>
+    <projectUrl>http://nlite.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NLite 框架旨在提供一个轻量级的组件库-DI，Aop,MessageBus, OO Mapper，国际化,数据校验，日志，异常管理，多线程等</description>
+    <summary>NLite 框架旨在提供一个轻量级的组件库-DI，Aop,MessageBus, OO Mapper，国际化,数据校验，日志，异常管理，多线程等</summary>
+    <releaseNotes>基于http://nlite.codeplex.com/SourceControl/changeset/98699版本
+1. 整合ELinq内部的反射类
+2. 整合ELinq内部的PrimitiveMapper类到Converter类中
+3. 重写并优化PrimitiveMapper
+4. 完善DataTableMapper</releaseNotes>
+    <language>zh-CN</language>
+    <tags>IOC DI AOP MessageBus OOMapper Validation</tags>
+    <references>
+      <reference file="NLite.dll" />
+    </references>
+  </metadata>
+</package>

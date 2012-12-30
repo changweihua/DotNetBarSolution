@@ -33,13 +33,13 @@
             this.mainFormStyleManager = new DevComponents.DotNetBar.StyleManager(this.components);
             this.schdedulerCalendar = new DevComponents.DotNetBar.Schedule.CalendarView();
             this.schedulerContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.calendarImageList = new System.Windows.Forms.ImageList(this.components);
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
             this.buttonGroupPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.btnXSave = new DevComponents.DotNetBar.ButtonX();
             this.monthCalendar = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiNewAppointment = new System.Windows.Forms.ToolStripMenuItem();
             this.dsaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.转到今天ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,7 +56,7 @@
             // 
             // mainFormStyleManager
             // 
-            this.mainFormStyleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.Office2010Black;
+            this.mainFormStyleManager.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
             this.mainFormStyleManager.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(163)))), ((int)(((byte)(26))))));
             // 
             // schdedulerCalendar
@@ -96,6 +96,16 @@
             this.改变视图ToolStripMenuItem});
             this.schedulerContextMenuStrip.Name = "contextMenuStrip1";
             this.schedulerContextMenuStrip.Size = new System.Drawing.Size(147, 126);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // calendarImageList
             // 
@@ -241,16 +251,6 @@
             this.monthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
             this.monthCalendar.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar_DateSelected);
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
-            // 
             // tsmiNewAppointment
             // 
             this.tsmiNewAppointment.Image = global::Scheduler.Properties.Resources.newAppointment;
@@ -330,6 +330,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "我的日历";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.schedulerContextMenuStrip.ResumeLayout(false);
             this.expandablePanel1.ResumeLayout(false);
@@ -341,7 +342,6 @@
 
         #endregion
 
-        private DevComponents.DotNetBar.StyleManager mainFormStyleManager;
         private DevComponents.DotNetBar.Schedule.CalendarView schdedulerCalendar;
         private DevComponents.DotNetBar.ExpandablePanel expandablePanel1;
         private DevComponents.Editors.DateTimeAdv.MonthCalendarAdv monthCalendar;
@@ -360,6 +360,7 @@
         private System.Windows.Forms.ToolStripMenuItem 周视图ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 月视图ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 时间线视图ToolStripMenuItem;
+        private DevComponents.DotNetBar.StyleManager mainFormStyleManager;
 
     }
 }

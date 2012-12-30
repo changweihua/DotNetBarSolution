@@ -46,6 +46,7 @@
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.cbeDisplay = new DevComponents.DotNetBar.Controls.ComboBoxEx();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
+            this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEnd)).BeginInit();
             this.SuspendLayout();
@@ -112,11 +113,13 @@
             // 
             // tbxSubject
             // 
+            this.tbxSubject.BackColor = System.Drawing.SystemColors.Control;
             // 
             // 
             // 
             this.tbxSubject.Border.Class = "TextBoxBorder";
             this.tbxSubject.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.tbxSubject.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tbxSubject.Location = new System.Drawing.Point(80, 12);
             this.tbxSubject.Name = "tbxSubject";
             this.tbxSubject.Size = new System.Drawing.Size(612, 21);
@@ -125,11 +128,13 @@
             // 
             // tbxLocation
             // 
+            this.tbxLocation.BackColor = System.Drawing.SystemColors.Control;
             // 
             // 
             // 
             this.tbxLocation.Border.Class = "TextBoxBorder";
             this.tbxLocation.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.tbxLocation.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tbxLocation.Location = new System.Drawing.Point(80, 39);
             this.tbxLocation.Name = "tbxLocation";
             this.tbxLocation.Size = new System.Drawing.Size(612, 21);
@@ -320,11 +325,32 @@
             this.labelX6.TabIndex = 7;
             this.labelX6.Text = "显示";
             // 
+            // switchButton1
+            // 
+            // 
+            // 
+            // 
+            this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.switchButton1.Location = new System.Drawing.Point(275, 295);
+            this.switchButton1.Name = "switchButton1";
+            this.switchButton1.OffText = "不开启提醒";
+            this.switchButton1.OnText = "开启提醒";
+            this.switchButton1.Size = new System.Drawing.Size(120, 30);
+            this.switchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.switchButton1.SwitchFont = new System.Drawing.Font("时尚中黑简体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.switchButton1.SwitchWidth = 45;
+            this.switchButton1.TabIndex = 8;
+            this.switchButton1.Value = true;
+            this.switchButton1.ValueFalse = "0";
+            this.switchButton1.ValueObject = "1";
+            this.switchButton1.ValueTrue = "1";
+            // 
             // AppointmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 336);
+            this.Controls.Add(this.switchButton1);
             this.Controls.Add(this.labelX6);
             this.Controls.Add(this.cbeDisplay);
             this.Controls.Add(this.labelX5);
@@ -374,5 +400,6 @@
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.Controls.ComboBoxEx cbeDisplay;
         private DevComponents.DotNetBar.LabelX labelX6;
+        private DevComponents.DotNetBar.Controls.SwitchButton switchButton1;
     }
 }
