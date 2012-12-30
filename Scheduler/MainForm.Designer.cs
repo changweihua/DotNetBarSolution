@@ -33,25 +33,24 @@
             this.mainFormStyleManager = new DevComponents.DotNetBar.StyleManager(this.components);
             this.schdedulerCalendar = new DevComponents.DotNetBar.Schedule.CalendarView();
             this.schedulerContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.calendarImageList = new System.Windows.Forms.ImageList(this.components);
-            this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
-            this.buttonGroupPanel = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.btnXSave = new DevComponents.DotNetBar.ButtonX();
-            this.monthCalendar = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
             this.tsmiNewAppointment = new System.Windows.Forms.ToolStripMenuItem();
             this.dsaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.转到今天ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.转到指定日期ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.改变视图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.日视图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.周视图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.月视图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.时间线视图ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiGotoToday = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiGotoDefinedDay = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiChangeView = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiDayView = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiWeekView = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiMonthView = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiTimelineView = new System.Windows.Forms.ToolStripMenuItem();
+            this.calendarImageList = new System.Windows.Forms.ImageList(this.components);
+            this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
+            this.btnXSave = new DevComponents.DotNetBar.ButtonX();
+            this.monthCalendar = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
+            this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.schedulerContextMenuStrip.SuspendLayout();
             this.expandablePanel1.SuspendLayout();
-            this.buttonGroupPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainFormStyleManager
@@ -75,7 +74,7 @@
             this.schdedulerCalendar.Location = new System.Drawing.Point(252, 0);
             this.schdedulerCalendar.MultiUserTabHeight = 20;
             this.schdedulerCalendar.Name = "schdedulerCalendar";
-            this.schdedulerCalendar.Size = new System.Drawing.Size(793, 425);
+            this.schdedulerCalendar.Size = new System.Drawing.Size(793, 468);
             this.schdedulerCalendar.TabIndex = 0;
             this.schdedulerCalendar.Text = "calendarView1";
             this.schdedulerCalendar.TimeIndicator.BorderColor = System.Drawing.Color.Empty;
@@ -90,22 +89,92 @@
             this.tsmiNewAppointment,
             this.dsaToolStripMenuItem1,
             this.toolStripSeparator1,
-            this.转到今天ToolStripMenuItem,
-            this.转到指定日期ToolStripMenuItem,
+            this.tsmiGotoToday,
+            this.tsmiGotoDefinedDay,
             this.toolStripSeparator2,
-            this.改变视图ToolStripMenuItem});
+            this.tsmiChangeView});
             this.schedulerContextMenuStrip.Name = "contextMenuStrip1";
-            this.schedulerContextMenuStrip.Size = new System.Drawing.Size(147, 126);
+            this.schedulerContextMenuStrip.Size = new System.Drawing.Size(153, 148);
+            // 
+            // tsmiNewAppointment
+            // 
+            this.tsmiNewAppointment.Image = global::Scheduler.Properties.Resources.newAppointment;
+            this.tsmiNewAppointment.Name = "tsmiNewAppointment";
+            this.tsmiNewAppointment.Size = new System.Drawing.Size(152, 22);
+            this.tsmiNewAppointment.Text = "新约会";
+            this.tsmiNewAppointment.Click += new System.EventHandler(this.tsmiNewAppointment_Click);
+            // 
+            // dsaToolStripMenuItem1
+            // 
+            this.dsaToolStripMenuItem1.Image = global::Scheduler.Properties.Resources.newAllDayEvent;
+            this.dsaToolStripMenuItem1.Name = "dsaToolStripMenuItem1";
+            this.dsaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.dsaToolStripMenuItem1.Text = "全天事件";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
+            // tsmiGotoToday
+            // 
+            this.tsmiGotoToday.Image = global::Scheduler.Properties.Resources.gotoToday;
+            this.tsmiGotoToday.Name = "tsmiGotoToday";
+            this.tsmiGotoToday.Size = new System.Drawing.Size(152, 22);
+            this.tsmiGotoToday.Text = "转到今天";
+            this.tsmiGotoToday.Click += new System.EventHandler(this.tsmiGotoToday_Click);
+            // 
+            // tsmiGotoDefinedDay
+            // 
+            this.tsmiGotoDefinedDay.Image = global::Scheduler.Properties.Resources.gotoTheDay;
+            this.tsmiGotoDefinedDay.Name = "tsmiGotoDefinedDay";
+            this.tsmiGotoDefinedDay.Size = new System.Drawing.Size(152, 22);
+            this.tsmiGotoDefinedDay.Text = "转到指定日期";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            // 
+            // tsmiChangeView
+            // 
+            this.tsmiChangeView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiDayView,
+            this.tsmiWeekView,
+            this.tsmiMonthView,
+            this.tsmiTimelineView});
+            this.tsmiChangeView.Image = global::Scheduler.Properties.Resources.changeView;
+            this.tsmiChangeView.Name = "tsmiChangeView";
+            this.tsmiChangeView.Size = new System.Drawing.Size(152, 22);
+            this.tsmiChangeView.Text = "改变视图";
+            // 
+            // tsmiDayView
+            // 
+            this.tsmiDayView.Name = "tsmiDayView";
+            this.tsmiDayView.Size = new System.Drawing.Size(152, 22);
+            this.tsmiDayView.Text = "日视图";
+            this.tsmiDayView.Click += new System.EventHandler(this.tsmiDayView_Click);
+            // 
+            // tsmiWeekView
+            // 
+            this.tsmiWeekView.Name = "tsmiWeekView";
+            this.tsmiWeekView.Size = new System.Drawing.Size(152, 22);
+            this.tsmiWeekView.Text = "周视图";
+            this.tsmiWeekView.Click += new System.EventHandler(this.tsmiWeekView_Click);
+            // 
+            // tsmiMonthView
+            // 
+            this.tsmiMonthView.Name = "tsmiMonthView";
+            this.tsmiMonthView.Size = new System.Drawing.Size(152, 22);
+            this.tsmiMonthView.Text = "月视图";
+            this.tsmiMonthView.Click += new System.EventHandler(this.tsmiMonthView_Click);
+            // 
+            // tsmiTimelineView
+            // 
+            this.tsmiTimelineView.Name = "tsmiTimelineView";
+            this.tsmiTimelineView.Size = new System.Drawing.Size(152, 22);
+            this.tsmiTimelineView.Text = "时间线视图";
+            this.tsmiTimelineView.Click += new System.EventHandler(this.tsmiTimelineView_Click);
             // 
             // calendarImageList
             // 
@@ -118,12 +187,13 @@
             this.expandablePanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.expandablePanel1.CollapseDirection = DevComponents.DotNetBar.eCollapseDirection.RightToLeft;
             this.expandablePanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.expandablePanel1.Controls.Add(this.buttonGroupPanel);
+            this.expandablePanel1.Controls.Add(this.switchButton1);
+            this.expandablePanel1.Controls.Add(this.btnXSave);
             this.expandablePanel1.Controls.Add(this.monthCalendar);
             this.expandablePanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.expandablePanel1.Location = new System.Drawing.Point(0, 0);
             this.expandablePanel1.Name = "expandablePanel1";
-            this.expandablePanel1.Size = new System.Drawing.Size(252, 425);
+            this.expandablePanel1.Size = new System.Drawing.Size(252, 468);
             this.expandablePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.expandablePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.expandablePanel1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -141,57 +211,18 @@
             this.expandablePanel1.TitleStyle.GradientAngle = 90;
             this.expandablePanel1.TitleText = "导航栏";
             // 
-            // buttonGroupPanel
-            // 
-            this.buttonGroupPanel.CanvasColor = System.Drawing.SystemColors.Control;
-            this.buttonGroupPanel.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.buttonGroupPanel.Controls.Add(this.btnXSave);
-            this.buttonGroupPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonGroupPanel.Location = new System.Drawing.Point(0, 311);
-            this.buttonGroupPanel.Name = "buttonGroupPanel";
-            this.buttonGroupPanel.Size = new System.Drawing.Size(252, 100);
-            // 
-            // 
-            // 
-            this.buttonGroupPanel.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.buttonGroupPanel.Style.BackColorGradientAngle = 90;
-            this.buttonGroupPanel.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.buttonGroupPanel.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.buttonGroupPanel.Style.BorderBottomWidth = 1;
-            this.buttonGroupPanel.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.buttonGroupPanel.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.buttonGroupPanel.Style.BorderLeftWidth = 1;
-            this.buttonGroupPanel.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.buttonGroupPanel.Style.BorderRightWidth = 1;
-            this.buttonGroupPanel.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.buttonGroupPanel.Style.BorderTopWidth = 1;
-            this.buttonGroupPanel.Style.CornerDiameter = 4;
-            this.buttonGroupPanel.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.buttonGroupPanel.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.buttonGroupPanel.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.buttonGroupPanel.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.buttonGroupPanel.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.buttonGroupPanel.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.buttonGroupPanel.TabIndex = 2;
-            // 
             // btnXSave
             // 
             this.btnXSave.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnXSave.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnXSave.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right;
-            this.btnXSave.Location = new System.Drawing.Point(10, 4);
+            this.btnXSave.Location = new System.Drawing.Point(3, 319);
             this.btnXSave.Name = "btnXSave";
             this.btnXSave.Shape = new DevComponents.DotNetBar.RoundRectangleShapeDescriptor(2);
-            this.btnXSave.Size = new System.Drawing.Size(221, 23);
+            this.btnXSave.Size = new System.Drawing.Size(243, 23);
             this.btnXSave.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnXSave.TabIndex = 0;
-            this.btnXSave.Text = "保存";
+            this.btnXSave.Text = "保存日历";
             // 
             // monthCalendar
             // 
@@ -251,77 +282,27 @@
             this.monthCalendar.WeeklyMarkedDays = new System.DayOfWeek[0];
             this.monthCalendar.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar_DateSelected);
             // 
-            // tsmiNewAppointment
+            // switchButton1
             // 
-            this.tsmiNewAppointment.Image = global::Scheduler.Properties.Resources.newAppointment;
-            this.tsmiNewAppointment.Name = "tsmiNewAppointment";
-            this.tsmiNewAppointment.Size = new System.Drawing.Size(146, 22);
-            this.tsmiNewAppointment.Text = "新约会";
-            this.tsmiNewAppointment.Click += new System.EventHandler(this.tsmiNewAppointment_Click);
             // 
-            // dsaToolStripMenuItem1
             // 
-            this.dsaToolStripMenuItem1.Image = global::Scheduler.Properties.Resources.newAllDayEvent;
-            this.dsaToolStripMenuItem1.Name = "dsaToolStripMenuItem1";
-            this.dsaToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
-            this.dsaToolStripMenuItem1.Text = "全天事件";
             // 
-            // 转到今天ToolStripMenuItem
-            // 
-            this.转到今天ToolStripMenuItem.Image = global::Scheduler.Properties.Resources.gotoToday;
-            this.转到今天ToolStripMenuItem.Name = "转到今天ToolStripMenuItem";
-            this.转到今天ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.转到今天ToolStripMenuItem.Text = "转到今天";
-            // 
-            // 转到指定日期ToolStripMenuItem
-            // 
-            this.转到指定日期ToolStripMenuItem.Image = global::Scheduler.Properties.Resources.gotoTheDay;
-            this.转到指定日期ToolStripMenuItem.Name = "转到指定日期ToolStripMenuItem";
-            this.转到指定日期ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.转到指定日期ToolStripMenuItem.Text = "转到指定日期";
-            // 
-            // 改变视图ToolStripMenuItem
-            // 
-            this.改变视图ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.日视图ToolStripMenuItem,
-            this.周视图ToolStripMenuItem,
-            this.月视图ToolStripMenuItem,
-            this.时间线视图ToolStripMenuItem});
-            this.改变视图ToolStripMenuItem.Image = global::Scheduler.Properties.Resources.changeView;
-            this.改变视图ToolStripMenuItem.Name = "改变视图ToolStripMenuItem";
-            this.改变视图ToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.改变视图ToolStripMenuItem.Text = "改变视图";
-            // 
-            // 日视图ToolStripMenuItem
-            // 
-            this.日视图ToolStripMenuItem.Name = "日视图ToolStripMenuItem";
-            this.日视图ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.日视图ToolStripMenuItem.Text = "日视图";
-            // 
-            // 周视图ToolStripMenuItem
-            // 
-            this.周视图ToolStripMenuItem.Name = "周视图ToolStripMenuItem";
-            this.周视图ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.周视图ToolStripMenuItem.Text = "周视图";
-            // 
-            // 月视图ToolStripMenuItem
-            // 
-            this.月视图ToolStripMenuItem.Name = "月视图ToolStripMenuItem";
-            this.月视图ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.月视图ToolStripMenuItem.Text = "月视图";
-            // 
-            // 时间线视图ToolStripMenuItem
-            // 
-            this.时间线视图ToolStripMenuItem.Name = "时间线视图ToolStripMenuItem";
-            this.时间线视图ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.时间线视图ToolStripMenuItem.Text = "时间线视图";
+            this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.switchButton1.Location = new System.Drawing.Point(4, 349);
+            this.switchButton1.Name = "switchButton1";
+            this.switchButton1.OffText = "开机不启动";
+            this.switchButton1.OnText = "开机启动";
+            this.switchButton1.Size = new System.Drawing.Size(242, 22);
+            this.switchButton1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.switchButton1.SwitchWidth = 121;
+            this.switchButton1.TabIndex = 2;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CaptionFont = new System.Drawing.Font("浪漫雅圆", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.ClientSize = new System.Drawing.Size(1045, 425);
+            this.ClientSize = new System.Drawing.Size(1045, 468);
             this.Controls.Add(this.schdedulerCalendar);
             this.Controls.Add(this.expandablePanel1);
             this.DoubleBuffered = true;
@@ -335,7 +316,6 @@
             this.schedulerContextMenuStrip.ResumeLayout(false);
             this.expandablePanel1.ResumeLayout(false);
             this.expandablePanel1.PerformLayout();
-            this.buttonGroupPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -346,21 +326,21 @@
         private DevComponents.DotNetBar.ExpandablePanel expandablePanel1;
         private DevComponents.Editors.DateTimeAdv.MonthCalendarAdv monthCalendar;
         private System.Windows.Forms.ImageList calendarImageList;
-        private DevComponents.DotNetBar.Controls.GroupPanel buttonGroupPanel;
         private DevComponents.DotNetBar.ButtonX btnXSave;
         private System.Windows.Forms.ContextMenuStrip schedulerContextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem tsmiNewAppointment;
         private System.Windows.Forms.ToolStripMenuItem dsaToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem 转到今天ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 转到指定日期ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiGotoToday;
+        private System.Windows.Forms.ToolStripMenuItem tsmiGotoDefinedDay;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem 改变视图ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 日视图ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 周视图ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 月视图ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 时间线视图ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiChangeView;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDayView;
+        private System.Windows.Forms.ToolStripMenuItem tsmiWeekView;
+        private System.Windows.Forms.ToolStripMenuItem tsmiMonthView;
+        private System.Windows.Forms.ToolStripMenuItem tsmiTimelineView;
         private DevComponents.DotNetBar.StyleManager mainFormStyleManager;
+        private DevComponents.DotNetBar.Controls.SwitchButton switchButton1;
 
     }
 }

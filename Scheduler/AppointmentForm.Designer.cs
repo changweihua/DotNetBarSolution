@@ -331,6 +331,7 @@
             // 
             // 
             this.switchButton1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.switchButton1.BackgroundStyle.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
             this.switchButton1.Location = new System.Drawing.Point(275, 295);
             this.switchButton1.Name = "switchButton1";
             this.switchButton1.OffText = "不开启提醒";
@@ -340,9 +341,8 @@
             this.switchButton1.SwitchFont = new System.Drawing.Font("时尚中黑简体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.switchButton1.SwitchWidth = 45;
             this.switchButton1.TabIndex = 8;
-            this.switchButton1.Value = true;
             this.switchButton1.ValueFalse = "0";
-            this.switchButton1.ValueObject = "1";
+            this.switchButton1.ValueObject = "0";
             this.switchButton1.ValueTrue = "1";
             // 
             // AppointmentForm
