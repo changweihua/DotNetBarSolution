@@ -40,8 +40,12 @@
             this.dateTimeInputStart = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.dateTimeInputEnd = new DevComponents.Editors.DateTimeAdv.DateTimeInput();
             this.btnxOk = new DevComponents.DotNetBar.ButtonX();
-            this.btnxCancel = new DevComponents.DotNetBar.ButtonX();
             this.buttonCommand = new DevComponents.DotNetBar.Command(this.components);
+            this.btnxCancel = new DevComponents.DotNetBar.ButtonX();
+            this.cbeLabel = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX5 = new DevComponents.DotNetBar.LabelX();
+            this.cbeDisplay = new DevComponents.DotNetBar.Controls.ComboBoxEx();
+            this.labelX6 = new DevComponents.DotNetBar.LabelX();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputStart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEnd)).BeginInit();
             this.SuspendLayout();
@@ -250,6 +254,11 @@
             this.btnxOk.TabIndex = 4;
             this.btnxOk.Text = "保存";
             // 
+            // buttonCommand
+            // 
+            this.buttonCommand.Name = "buttonCommand";
+            this.buttonCommand.Executed += new System.EventHandler(this.buttonCommand_Executed);
+            // 
             // btnxCancel
             // 
             this.btnxCancel.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -263,16 +272,63 @@
             this.btnxCancel.TabIndex = 5;
             this.btnxCancel.Text = "取消";
             // 
-            // buttonCommand
+            // cbeLabel
             // 
-            this.buttonCommand.Name = "buttonCommand";
-            this.buttonCommand.Executed += new System.EventHandler(this.buttonCommand_Executed);
+            this.cbeLabel.DisplayMember = "Text";
+            this.cbeLabel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbeLabel.FormattingEnabled = true;
+            this.cbeLabel.ItemHeight = 15;
+            this.cbeLabel.Location = new System.Drawing.Point(486, 70);
+            this.cbeLabel.Name = "cbeLabel";
+            this.cbeLabel.Size = new System.Drawing.Size(206, 21);
+            this.cbeLabel.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbeLabel.TabIndex = 6;
+            // 
+            // labelX5
+            // 
+            // 
+            // 
+            // 
+            this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX5.Location = new System.Drawing.Point(432, 70);
+            this.labelX5.Name = "labelX5";
+            this.labelX5.Size = new System.Drawing.Size(48, 23);
+            this.labelX5.TabIndex = 7;
+            this.labelX5.Text = "标签";
+            // 
+            // cbeDisplay
+            // 
+            this.cbeDisplay.DisplayMember = "Text";
+            this.cbeDisplay.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbeDisplay.FormattingEnabled = true;
+            this.cbeDisplay.ItemHeight = 15;
+            this.cbeDisplay.Location = new System.Drawing.Point(486, 99);
+            this.cbeDisplay.Name = "cbeDisplay";
+            this.cbeDisplay.Size = new System.Drawing.Size(206, 21);
+            this.cbeDisplay.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.cbeDisplay.TabIndex = 6;
+            // 
+            // labelX6
+            // 
+            // 
+            // 
+            // 
+            this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX6.Location = new System.Drawing.Point(432, 99);
+            this.labelX6.Name = "labelX6";
+            this.labelX6.Size = new System.Drawing.Size(48, 23);
+            this.labelX6.TabIndex = 7;
+            this.labelX6.Text = "显示";
             // 
             // AppointmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(704, 336);
+            this.Controls.Add(this.labelX6);
+            this.Controls.Add(this.cbeDisplay);
+            this.Controls.Add(this.labelX5);
+            this.Controls.Add(this.cbeLabel);
             this.Controls.Add(this.btnxCancel);
             this.Controls.Add(this.btnxOk);
             this.Controls.Add(this.dateTimeInputEnd);
@@ -293,6 +349,7 @@
             this.Name = "AppointmentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "未命名 -- 约会";
+            this.Load += new System.EventHandler(this.AppointmentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputStart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimeInputEnd)).EndInit();
             this.ResumeLayout(false);
@@ -313,5 +370,9 @@
         private DevComponents.DotNetBar.ButtonX btnxOk;
         private DevComponents.DotNetBar.ButtonX btnxCancel;
         private DevComponents.DotNetBar.Command buttonCommand;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cbeLabel;
+        private DevComponents.DotNetBar.LabelX labelX5;
+        private DevComponents.DotNetBar.Controls.ComboBoxEx cbeDisplay;
+        private DevComponents.DotNetBar.LabelX labelX6;
     }
 }
