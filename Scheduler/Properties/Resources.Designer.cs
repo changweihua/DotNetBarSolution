@@ -73,6 +73,16 @@ namespace Scheduler.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap gotoTheDay {
             get {
                 object obj = ResourceManager.GetObject("gotoTheDay", resourceCulture);
@@ -106,6 +116,16 @@ namespace Scheduler.Properties {
         internal static System.Drawing.Bitmap newAppointment {
             get {
                 object obj = ResourceManager.GetObject("newAppointment", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap resize {
+            get {
+                object obj = ResourceManager.GetObject("resize", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

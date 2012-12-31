@@ -187,5 +187,44 @@ namespace Scheduler
 
         #endregion
 
+
+        /// <summary>
+        /// 双击托盘图标
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void schdulerNotifyIcon_DoubleClick(object sender, EventArgs e)
+        {
+            // Show the form when the user double clicks on the notify icon.
+
+            // Set the WindowState to normal if the form is minimized.
+            if (this.WindowState == FormWindowState.Minimized)
+                this.WindowState = FormWindowState.Maximized;
+
+            // Activate the form.
+            this.Show();
+            this.ShowInTaskbar = true;
+            this.schdulerNotifyIcon.Visible = false;
+            this.Activate();
+        }
+
+        /// <summary>
+        /// 窗体大小调整
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainForm_Resize(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Minimized)
+            {
+                schdulerNotifyIcon.Visible = true;
+                schdulerNotifyIcon.BalloonTipTitle = "提示";
+                schdulerNotifyIcon.BalloonTipText = "程序仍在运行,双击图标显示主窗体";
+                schdulerNotifyIcon.ShowBalloonTip(1000);
+                this.ShowInTaskbar = false;
+                this.Hide();
+            }
+        }
+
     }
 }
