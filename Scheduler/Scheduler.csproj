@@ -57,6 +57,7 @@
   <ItemGroup>
     <Reference Include="DevComponents.DotNetBar.Schedule, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=10.5.0.3, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=10.5.0.3, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL" />
     <Reference Include="ELinq">
       <HintPath>..\packages\ELinq.0.5.1.2\lib\net35\ELinq.dll</HintPath>
     </Reference>
@@ -145,7 +146,16 @@
     <Compile Include="SettingForm.Designer.cs">
       <DependentUpon>SettingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatusForm.Designer.cs">
+      <DependentUpon>StatusForm.cs</DependentUpon>
+    </Compile>
     <Content Include="brand.ico" />
+    <Content Include="images\aboutForm\idea.png" />
+    <Content Include="images\aboutForm\system.png" />
+    <Content Include="images\aboutForm\author.png" />
     <Content Include="images\imagelist\system.png" />
     <Content Include="images\imagelist\systemMonitor.png" />
     <Content Include="images\imagelist\loadScheduler.png" />
@@ -165,6 +175,9 @@
     <Content Include="images\exit.png" />
     <Content Include="images\remind.ico" />
     <Content Include="images\choosedate.ico" />
+    <Content Include="images\settingform\start.png" />
+    <Content Include="images\settingform\data.png" />
+    <Content Include="images\statusform\statusForm.ico" />
     <Content Include="Northwind.Mapping.xml" />
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
@@ -212,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SettingForm.resx">
       <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatusForm.resx">
+      <DependentUpon>StatusForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="data\schedluer.db">

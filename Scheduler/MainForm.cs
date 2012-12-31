@@ -18,6 +18,7 @@ namespace Scheduler
         //关于窗体变量
         AboutForm aboutForm = null;
         SettingForm settingForm = null;
+        StatusForm statusForm = null;
 
         #endregion
 
@@ -45,6 +46,7 @@ namespace Scheduler
             //实例化关于窗体
             aboutForm = new AboutForm();
             settingForm = new SettingForm();
+            statusForm = new StatusForm();
         }
 
         #endregion
@@ -286,6 +288,11 @@ namespace Scheduler
         private void biSystemSetting_Click(object sender, EventArgs e)
         {
             settingForm.ShowDialog();
+        }
+
+        private void biSystemStatus_Click(object sender, EventArgs e)
+        {
+            statusForm.ShowDialog();
         }
 
     }

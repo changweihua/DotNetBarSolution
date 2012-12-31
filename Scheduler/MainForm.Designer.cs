@@ -49,7 +49,17 @@
             this.navigationPane1 = new DevComponents.DotNetBar.NavigationPane();
             this.navigationPanePanel2 = new DevComponents.DotNetBar.NavigationPanePanel();
             this.navigationBar1 = new DevComponents.DotNetBar.NavigationBar();
+            this.biSystemSetting = new DevComponents.DotNetBar.ButtonItem();
+            this.biAboutSystem = new DevComponents.DotNetBar.ButtonItem();
+            this.biSystemStatus = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
             this.navigationPanePanel1 = new DevComponents.DotNetBar.NavigationPanePanel();
+            this.navigationBar2 = new DevComponents.DotNetBar.NavigationBar();
+            this.buttonItem5 = new DevComponents.DotNetBar.ButtonItem();
+            this.biSaveScheduler = new DevComponents.DotNetBar.ButtonItem();
+            this.biClearScheduler = new DevComponents.DotNetBar.ButtonItem();
+            this.biImportOrExportScheduler = new DevComponents.DotNetBar.ButtonItem();
+            this.biLoadScheduler = new DevComponents.DotNetBar.ButtonItem();
             this.monthCalendar = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
             this.schdulerNotifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmsNotifyIcon = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -58,24 +68,14 @@
             this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.navigationBar2 = new DevComponents.DotNetBar.NavigationBar();
-            this.biSystemSetting = new DevComponents.DotNetBar.ButtonItem();
-            this.biAboutSystem = new DevComponents.DotNetBar.ButtonItem();
-            this.biSystemStatus = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem2 = new DevComponents.DotNetBar.ButtonItem();
-            this.buttonItem5 = new DevComponents.DotNetBar.ButtonItem();
-            this.biSaveScheduler = new DevComponents.DotNetBar.ButtonItem();
-            this.biClearScheduler = new DevComponents.DotNetBar.ButtonItem();
-            this.biImportOrExportScheduler = new DevComponents.DotNetBar.ButtonItem();
-            this.biLoadScheduler = new DevComponents.DotNetBar.ButtonItem();
             this.schedulerContextMenuStrip.SuspendLayout();
             this.expandablePanel1.SuspendLayout();
             this.navigationPane1.SuspendLayout();
             this.navigationPanePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navigationBar1)).BeginInit();
             this.navigationPanePanel1.SuspendLayout();
-            this.cmsNotifyIcon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navigationBar2)).BeginInit();
+            this.cmsNotifyIcon.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainFormStyleManager
@@ -302,6 +302,47 @@
             this.navigationBar1.TabIndex = 0;
             this.navigationBar1.Text = "systemNavigationBar";
             // 
+            // biSystemSetting
+            // 
+            this.biSystemSetting.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.biSystemSetting.Checked = true;
+            this.biSystemSetting.Image = ((System.Drawing.Image)(resources.GetObject("biSystemSetting.Image")));
+            this.biSystemSetting.ImageListSizeSelection = DevComponents.DotNetBar.eButtonImageListSelection.Large;
+            this.biSystemSetting.Name = "biSystemSetting";
+            this.biSystemSetting.OptionGroup = "navBar";
+            this.biSystemSetting.Text = "系统设置";
+            this.biSystemSetting.Click += new System.EventHandler(this.biSystemSetting_Click);
+            // 
+            // biAboutSystem
+            // 
+            this.biAboutSystem.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.biAboutSystem.Checked = true;
+            this.biAboutSystem.Image = global::Scheduler.Properties.Resources.about1;
+            this.biAboutSystem.Name = "biAboutSystem";
+            this.biAboutSystem.OptionGroup = "navBar";
+            this.biAboutSystem.Text = "关于系统";
+            this.biAboutSystem.Click += new System.EventHandler(this.biAboutSystem_Click);
+            // 
+            // biSystemStatus
+            // 
+            this.biSystemStatus.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.biSystemStatus.Checked = true;
+            this.biSystemStatus.Image = global::Scheduler.Properties.Resources.systemMonitor;
+            this.biSystemStatus.Name = "biSystemStatus";
+            this.biSystemStatus.OptionGroup = "navBar";
+            this.biSystemStatus.Text = "程序状态";
+            this.biSystemStatus.Click += new System.EventHandler(this.biSystemStatus_Click);
+            // 
+            // buttonItem2
+            // 
+            this.buttonItem2.Checked = true;
+            this.buttonItem2.Image = global::Scheduler.Properties.Resources.system;
+            this.buttonItem2.ImageFixedSize = new System.Drawing.Size(16, 16);
+            this.buttonItem2.Name = "buttonItem2";
+            this.buttonItem2.OptionGroup = "navBar";
+            this.buttonItem2.Text = "系统选项";
+            this.buttonItem2.Tooltip = "系统的相关操作";
+            // 
             // navigationPanePanel1
             // 
             this.navigationPanePanel1.AutoSize = true;
@@ -311,13 +352,76 @@
             this.navigationPanePanel1.Location = new System.Drawing.Point(0, 0);
             this.navigationPanePanel1.Name = "navigationPanePanel1";
             this.navigationPanePanel1.ParentItem = this.biLoadScheduler;
-            this.navigationPanePanel1.Size = new System.Drawing.Size(252, 312);
+            this.navigationPanePanel1.Size = new System.Drawing.Size(252, 280);
             this.navigationPanePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.navigationPanePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.navigationPanePanel1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
             this.navigationPanePanel1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.navigationPanePanel1.Style.GradientAngle = 90;
             this.navigationPanePanel1.TabIndex = 2;
+            // 
+            // navigationBar2
+            // 
+            this.navigationBar2.BackgroundStyle.BackColor1.Color = System.Drawing.SystemColors.Control;
+            this.navigationBar2.BackgroundStyle.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.navigationBar2.BackgroundStyle.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.navigationBar2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.navigationBar2.ItemPaddingBottom = 2;
+            this.navigationBar2.ItemPaddingTop = 2;
+            this.navigationBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem5,
+            this.biSaveScheduler,
+            this.biClearScheduler,
+            this.biImportOrExportScheduler});
+            this.navigationBar2.Location = new System.Drawing.Point(0, 0);
+            this.navigationBar2.Name = "navigationBar2";
+            this.navigationBar2.Size = new System.Drawing.Size(252, 168);
+            this.navigationBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.navigationBar2.TabIndex = 0;
+            this.navigationBar2.Text = "navigationBar2";
+            // 
+            // buttonItem5
+            // 
+            this.buttonItem5.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.buttonItem5.Checked = true;
+            this.buttonItem5.Image = global::Scheduler.Properties.Resources.loadScheduler;
+            this.buttonItem5.Name = "buttonItem5";
+            this.buttonItem5.OptionGroup = "navBar";
+            this.buttonItem5.Text = "加载日历";
+            // 
+            // biSaveScheduler
+            // 
+            this.biSaveScheduler.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.biSaveScheduler.Image = global::Scheduler.Properties.Resources.saveScheduler;
+            this.biSaveScheduler.Name = "biSaveScheduler";
+            this.biSaveScheduler.OptionGroup = "navBar";
+            this.biSaveScheduler.Text = "保存日历";
+            // 
+            // biClearScheduler
+            // 
+            this.biClearScheduler.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.biClearScheduler.Image = global::Scheduler.Properties.Resources.clearScheduler;
+            this.biClearScheduler.Name = "biClearScheduler";
+            this.biClearScheduler.OptionGroup = "navBar";
+            this.biClearScheduler.Text = "清空日历";
+            // 
+            // biImportOrExportScheduler
+            // 
+            this.biImportOrExportScheduler.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
+            this.biImportOrExportScheduler.Checked = true;
+            this.biImportOrExportScheduler.Image = global::Scheduler.Properties.Resources.editScheduler;
+            this.biImportOrExportScheduler.Name = "biImportOrExportScheduler";
+            this.biImportOrExportScheduler.OptionGroup = "navBar";
+            this.biImportOrExportScheduler.Text = "导入导出日历";
+            // 
+            // biLoadScheduler
+            // 
+            this.biLoadScheduler.Image = global::Scheduler.Properties.Resources.chooseScheduler;
+            this.biLoadScheduler.ImageFixedSize = new System.Drawing.Size(16, 16);
+            this.biLoadScheduler.Name = "biLoadScheduler";
+            this.biLoadScheduler.OptionGroup = "navBar";
+            this.biLoadScheduler.Text = "日历选项";
+            this.biLoadScheduler.Tooltip = "这里进行日历相关的操作";
             // 
             // monthCalendar
             // 
@@ -427,109 +531,6 @@
             this.tsmiExit.Text = "退出程序";
             this.tsmiExit.Click += new System.EventHandler(this.tsmiExit_Click);
             // 
-            // navigationBar2
-            // 
-            this.navigationBar2.BackgroundStyle.BackColor1.Color = System.Drawing.SystemColors.Control;
-            this.navigationBar2.BackgroundStyle.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.navigationBar2.BackgroundStyle.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.navigationBar2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationBar2.ItemPaddingBottom = 2;
-            this.navigationBar2.ItemPaddingTop = 2;
-            this.navigationBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.buttonItem5,
-            this.biSaveScheduler,
-            this.biClearScheduler,
-            this.biImportOrExportScheduler});
-            this.navigationBar2.Location = new System.Drawing.Point(0, 0);
-            this.navigationBar2.Name = "navigationBar2";
-            this.navigationBar2.Size = new System.Drawing.Size(252, 168);
-            this.navigationBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.navigationBar2.TabIndex = 0;
-            this.navigationBar2.Text = "navigationBar2";
-            // 
-            // biSystemSetting
-            // 
-            this.biSystemSetting.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.biSystemSetting.Checked = true;
-            this.biSystemSetting.Image = ((System.Drawing.Image)(resources.GetObject("biSystemSetting.Image")));
-            this.biSystemSetting.ImageListSizeSelection = DevComponents.DotNetBar.eButtonImageListSelection.Large;
-            this.biSystemSetting.Name = "biSystemSetting";
-            this.biSystemSetting.OptionGroup = "navBar";
-            this.biSystemSetting.Text = "系统设置";
-            this.biSystemSetting.Click += new System.EventHandler(this.biSystemSetting_Click);
-            // 
-            // biAboutSystem
-            // 
-            this.biAboutSystem.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.biAboutSystem.Checked = true;
-            this.biAboutSystem.Image = global::Scheduler.Properties.Resources.about1;
-            this.biAboutSystem.Name = "biAboutSystem";
-            this.biAboutSystem.OptionGroup = "navBar";
-            this.biAboutSystem.Text = "关于系统";
-            this.biAboutSystem.Click += new System.EventHandler(this.biAboutSystem_Click);
-            // 
-            // biSystemStatus
-            // 
-            this.biSystemStatus.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.biSystemStatus.Image = global::Scheduler.Properties.Resources.systemMonitor;
-            this.biSystemStatus.Name = "biSystemStatus";
-            this.biSystemStatus.OptionGroup = "navBar";
-            this.biSystemStatus.Text = "程序状态";
-            // 
-            // buttonItem2
-            // 
-            this.buttonItem2.Checked = true;
-            this.buttonItem2.Image = global::Scheduler.Properties.Resources.system;
-            this.buttonItem2.ImageFixedSize = new System.Drawing.Size(16, 16);
-            this.buttonItem2.Name = "buttonItem2";
-            this.buttonItem2.OptionGroup = "navBar";
-            this.buttonItem2.Text = "系统选项";
-            this.buttonItem2.Tooltip = "系统的相关操作";
-            // 
-            // buttonItem5
-            // 
-            this.buttonItem5.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.buttonItem5.Checked = true;
-            this.buttonItem5.Image = global::Scheduler.Properties.Resources.loadScheduler;
-            this.buttonItem5.Name = "buttonItem5";
-            this.buttonItem5.OptionGroup = "navBar";
-            this.buttonItem5.Text = "加载日历";
-            // 
-            // biSaveScheduler
-            // 
-            this.biSaveScheduler.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.biSaveScheduler.Image = global::Scheduler.Properties.Resources.saveScheduler;
-            this.biSaveScheduler.Name = "biSaveScheduler";
-            this.biSaveScheduler.OptionGroup = "navBar";
-            this.biSaveScheduler.Text = "保存日历";
-            // 
-            // biClearScheduler
-            // 
-            this.biClearScheduler.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.biClearScheduler.Image = global::Scheduler.Properties.Resources.clearScheduler;
-            this.biClearScheduler.Name = "biClearScheduler";
-            this.biClearScheduler.OptionGroup = "navBar";
-            this.biClearScheduler.Text = "清空日历";
-            // 
-            // biImportOrExportScheduler
-            // 
-            this.biImportOrExportScheduler.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText;
-            this.biImportOrExportScheduler.Checked = true;
-            this.biImportOrExportScheduler.Image = global::Scheduler.Properties.Resources.editScheduler;
-            this.biImportOrExportScheduler.Name = "biImportOrExportScheduler";
-            this.biImportOrExportScheduler.OptionGroup = "navBar";
-            this.biImportOrExportScheduler.Text = "导入导出日历";
-            // 
-            // biLoadScheduler
-            // 
-            this.biLoadScheduler.Checked = true;
-            this.biLoadScheduler.Image = global::Scheduler.Properties.Resources.chooseScheduler;
-            this.biLoadScheduler.ImageFixedSize = new System.Drawing.Size(16, 16);
-            this.biLoadScheduler.Name = "biLoadScheduler";
-            this.biLoadScheduler.OptionGroup = "navBar";
-            this.biLoadScheduler.Text = "日历选项";
-            this.biLoadScheduler.Tooltip = "这里进行日历相关的操作";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -556,8 +557,8 @@
             this.navigationPanePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navigationBar1)).EndInit();
             this.navigationPanePanel1.ResumeLayout(false);
-            this.cmsNotifyIcon.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navigationBar2)).EndInit();
+            this.cmsNotifyIcon.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
