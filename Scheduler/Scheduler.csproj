@@ -93,12 +93,19 @@
     <Compile Include="ChooseDateForm.Designer.cs">
       <DependentUpon>ChooseDateForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorForm.Designer.cs">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainLogger.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="Northwind.cs" />
     <Compile Include="Program.cs" />
@@ -110,6 +117,7 @@
       <DependentUpon>RemindForm.cs</DependentUpon>
     </Compile>
     <Content Include="brand.ico" />
+    <Content Include="images\remind.ico" />
     <Content Include="images\choosedate.ico" />
     <Content Include="Northwind.Mapping.xml" />
     <EmbeddedResource Include="AppointmentForm.resx">
@@ -117,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChooseDateForm.resx">
       <DependentUpon>ChooseDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorForm.resx">
+      <DependentUpon>ErrorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -32,6 +32,8 @@ namespace Scheduler
             MessageBoxEx.EnableGlass = false;
             //加载计划列表
             LoadScheduler(DateTime.Now);
+            //记录日志
+            MainLogger.Instance.Trace("加载主窗体");
         }
 
         #endregion
@@ -75,9 +77,10 @@ namespace Scheduler
         /// <param name="dt"></param>
         private void LoadScheduler(DateTime dt)
         {
+            List<Appointment> appointments = null;
             using (var ctx = DbConfiguration.Items["Scheduler"].CreateDbContext())
             {
-                var query = ctx.Set<Appointment>().Where(a => a.StartTime.Date == dt.Date);
+                appointments = ctx.Set<Appointment>().Where(a => a.StartTime.Date == dt.Date).ToList();
             }
         }
 
@@ -172,7 +175,17 @@ namespace Scheduler
 
         #endregion
 
-        
+        #region 公共方法
+
+        void FillScheduler(List<Appointment> list)
+        {
+            foreach (var item in list)
+            {
+
+            }
+        }
+
+        #endregion
 
     }
 }
