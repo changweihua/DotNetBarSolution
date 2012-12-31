@@ -126,13 +126,82 @@
   <metadata name="calendarImageList.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>223, 17</value>
   </metadata>
+  <data name="calendarImageList.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAC0
+        BwAAAk1TRnQBSQFMAgEBAgEAAWABAAFgAQABEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        AwABEAMAAQEBAAEgBgABECYAAxMBGgMrAUIDNwFaAzcBWgMrAUIDEwEaFAADAQECAwYBCAMNARIDIgEy
+        AxIBGAMMARADBgEIAwEBAggAAwEBAgMBAQIDAQECmAADEwEaA0IBdANaAdUDVAHtAzIB+wMyAfsDVAHt
+        A1oB1QNCAXQDEwEaDAADDAEQAyABLgFeAloB1QGHAWgBRAH5AV0CWQHXAyYBOAMbASYDEgEYAwoBDgMP
+        ARQDFgEeAxsBJgMfASwDFAEcAwoBDgMDAQSIAAMUARwDVgHBAz8B/QMnAf8DJwH/AycB/wMnAf8DJwH/
+        AycB/wM/Af0DVgHBAxQBHAgAAwMBBANOAZkByQGgAYAB/wGPAVYBMwH/AZ8BVwFAAf0BRwJGAYEDDAEQ
+        AwQBBgMDAQQDBgEIAwwBEANFAXwBkgGTAZIB+wNdAdcDCgEOAwEBAoQAAxMBGgNWAcEDJwH/AycB/wMn
+        Af8DTwHvA1YBuQNWAbsDWAHpAycB/wMnAf8DJwH/A1YBwQMTARoIAAJWAVQBqwHOAaUBhQH/Ac0BrAGR
+        Af8BigFWATcB/wGHAWgBRAH5AykBPgwAAz4BagO0Af0DtwH/A5MB+wMPARSIAANCAXQDPwH9AycB/wMn
+        Af8DJwH/A04BlwMGAQgDTAGRA1gB6QMnAf8DJwH/AycB/wM/Af0DQgF0CAADFAEcAlUBUwGtAbEBjgFT
+        Af0BvAGSAWUB/wGLAVgBOAH/AXABZAFTAfEDKAE8BAADOwFkA7UB/QPdAf8DuAH9A0gBg4gAAxMBGgNa
+        AdUDJwH/AycB/wMnAf8DJwH/A08BmwQAA1UBtwMnAf8DJwH/AycB/wMnAf8DJwH/A1oB1QMTARoMAAM8
+        AWYBlQFnAV4B+wG0AYMBUAH/AYsBVgE3Af8BagFgAVkB6wM+AWoDtQH9A9sB/wG6AbsBugH9A04BmYwA
+        AysBQgNUAe0DJwH/AycB/wMnAf8DJwH/A1kBzwMQARYDQgF2Az8B/QMnAf8DJwH/AycB/wMnAf8DVAHt
+        AysBQhAAAzgBXgGtAYgBUAH9AcwBowGCAf8BogFiATsB/wGuAqgB/QPaAf8BuwG8AbsB/QNSAakDAQEC
+        jAADNwFaAzIB+wMnAf8DJwH/AycB/wMnAf8DWgHnAycBOgMrAUIDVAHtAycB/wMnAf8DJwH/AycB/wMy
+        AfsDNwFaFAACOgE5AWABXwJcAd8BsgGcAY0B/wG+AbYBsQH/Ac4BzQHMAf8DVwG3AwMBBJAAAzcBWgMy
+        AfsDJwH/AycB/wMnAf8DQQH5A1YBuwMfASwDKwFCA1kB6wMnAf8DJwH/AycB/wMnAf8DMgH7AzcBWggA
+        Aw8BFANIAYMDUAGbA0oBiwGXAZkBmAH7AcUBwwHCAf8BwQG5AbQB/wGUAZIBkQH7Ax8BLJQAAysBQgNU
+        Ae0DJwH/AycB/wMnAf8DMgH7A1sB2QNPAaUDWgHVAz8B/QMnAf8DJwH/AycB/wMnAf8DVAHtAysBQgQA
+        AwQBBgNcAdED6AH/A+8B/wPlAf8DxQH/A8kB/wNcAc0BcQFwAW4B7QJgAV8B3wMYASKQAAMTARoDWgHV
+        AycB/wMnAf8DJwH/AycB/wMnAf8DTwHvA0gBhwNaAdMDJwH/AycB/wMnAf8DJwH/A1oB1QMTARoEAAM1
+        AVYB0gLTAf8BuAG6AbkB/wNlAeMDxwH9A+UB/wNiAeMDDwEUAyQBNgF+AXsBdwHxAXABbgFrAe8DVQG1
+        AwoBDowAA0IBdAM/Af0DJwH/AycB/wMnAf8DJwH/A1YBuwMEAQYDQAFwAycB/wMnAf8DJwH/Az8B/QNC
+        AXQIAAMvAUoDXQHTAw8BFAMzAVIDXAHRA+oB/wNdAdMIAANGAX4B1QHKAcAB/wHPAcIBtwH/A1MBpYwA
+        AxMBGgNWAcEDJwH/AycB/wMnAf8DJwH/A0wB8wNWAbMDWAHdAycB/wMnAf8DJwH/A1YBwQMTARoMAAMD
+        AQQEAAMKAQ4DewHxA+UB/wNWAbEIAAMnAToBcAFuAWsB6wHcAc4BwQH/AbUBrAGoAf0DNgFYjAADFAEc
+        A1YBwQM/Af0DJwH/AycB/wMnAf8DJwH/AycB/wMnAf8DPwH9A1YBwQMUARwUAAMBAQIDXAHNAdgB2QHY
+        Af8BgAGCAYEB9QMkATYMAAMcASgDXgHZA1gBuwMJAQyQAAMTARoDQgF0A1oB1QNUAe0DMgH7AzIB+wNU
+        Ae0DWgHVA0IBdAMTARocAAMtAUYDPgFqAxYBHhQAAw0BEgMDAQScAAMTARoDKwFCAzcBWgM3AVoDKwFC
+        AxMBGtQAAUIBTQE+BwABPgMAASgDAAFAAwABEAMAAQEBAAEBBQABgBcAA/8BAAH4AR8BAAHHBAAB4AEH
+        BgABwAEDBgABgAEBAYEBwQQAAYABAQGAAYMEAAEBAQAB4AEHBgAB8AEHBgAB+AEPBgABwAEfBgABgAEP
+        BgABgAEDBAABgAEBAYABwwQAAYABAQHQAcEEAAHAAQMB4AHhBAAB4AEHAfEB8wQAAfgBHwL/BAAL
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="biSystemSetting.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="schdulerNotifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>624, 17</value>
   </metadata>
   <metadata name="cmsNotifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>795, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="schdulerNotifyIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAgBAAAAAAAAAAAAAAAAAAAAAA

@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("Scheduler")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Mono 小软系列 日历")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("CMONO.NET")]
-[assembly: AssemblyProduct("Scheduler")]
+[assembly: AssemblyProduct("我的日历")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

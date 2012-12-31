@@ -11,6 +11,7 @@
     <AssemblyName>Scheduler</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>发布\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -21,9 +22,13 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://www.cmono.net</SupportUrl>
+    <ErrorReportUrl>http://www.cmono.net</ErrorReportUrl>
+    <ProductName>我的日历</ProductName>
+    <PublisherName>常伟华</PublisherName>
+    <SuiteName>Mono 小软</SuiteName>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -81,6 +86,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +116,12 @@
     <Compile Include="ErrorForm.Designer.cs">
       <DependentUpon>ErrorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,13 +139,36 @@
     <Compile Include="RemindForm.Designer.cs">
       <DependentUpon>RemindForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
     <Content Include="brand.ico" />
+    <Content Include="images\imagelist\system.png" />
+    <Content Include="images\imagelist\systemMonitor.png" />
+    <Content Include="images\imagelist\loadScheduler.png" />
+    <Content Include="images\imagelist\addScheduler.png" />
+    <Content Include="images\imagelist\editScheduler.png" />
+    <Content Include="images\imagelist\deleteScheduler.png" />
+    <Content Include="images\imagelist\chooseScheduler.png" />
+    <Content Include="images\imagelist\saveScheduler.png" />
+    <Content Include="images\imagelist\clearScheduler.png" />
+    <Content Include="images\imagelist\setting.png" />
+    <Content Include="images\imagelist\about.png" />
+    <Content Include="images\setting.ico" />
+    <Content Include="images\help.ico" />
+    <Content Include="images\about.ico" />
     <Content Include="images\about.png" />
     <Content Include="images\resize.png" />
     <Content Include="images\exit.png" />
     <Content Include="images\remind.ico" />
     <Content Include="images\choosedate.ico" />
     <Content Include="Northwind.Mapping.xml" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ErrorForm.resx">
       <DependentUpon>ErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -166,6 +209,9 @@
     </Content>
     <EmbeddedResource Include="RemindForm.resx">
       <DependentUpon>RemindForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="data\schedluer.db">
@@ -203,6 +249,7 @@
   <ItemGroup>
     <Content Include="images\brand.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

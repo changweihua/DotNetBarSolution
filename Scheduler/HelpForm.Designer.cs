@@ -1,6 +1,6 @@
 ﻿namespace Scheduler
 {
-    partial class AboutForm
+    partial class HelpForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HelpForm));
             this.SuspendLayout();
             // 
-            // AboutForm
+            // HelpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 256);
+            this.ClientSize = new System.Drawing.Size(730, 398);
             this.DoubleBuffered = true;
             this.EnableGlass = false;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.Name = "AboutForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "关于";
+            this.Name = "HelpForm";
+            this.Text = "帮助";
             this.ResumeLayout(false);
 
         }

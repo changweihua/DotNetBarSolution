@@ -10,9 +10,9 @@ using DevComponents.DotNetBar;
 
 namespace Scheduler
 {
-    public partial class AboutForm : Office2007Form
+    public partial class SettingForm : Office2007Form
     {
-        public AboutForm()
+        public SettingForm()
         {
             InitializeComponent();
         }

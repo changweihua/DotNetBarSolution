@@ -15,7 +15,9 @@ namespace Scheduler
     {
         #region 全局变量
 
+        //关于窗体变量
         AboutForm aboutForm = null;
+        SettingForm settingForm = null;
 
         #endregion
 
@@ -42,6 +44,7 @@ namespace Scheduler
             MainLogger.Instance.Trace("加载主窗体");
             //实例化关于窗体
             aboutForm = new AboutForm();
+            settingForm = new SettingForm();
         }
 
         #endregion
@@ -195,9 +198,17 @@ namespace Scheduler
 
         #endregion
 
-
         #region 托盘功能区
 
+        /// <summary>
+        /// 显示主窗体
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void tsmiShow_Click(object sender, EventArgs e)
+        {
+            schdulerNotifyIcon_DoubleClick(sender, e);
+        }
 
         /// <summary>
         /// 双击托盘图标
@@ -244,11 +255,21 @@ namespace Scheduler
             }
         }
 
+        /// <summary>
+        /// 查看程序信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void tsmiAbout_Click(object sender, EventArgs e)
         {
             aboutForm.Show();
         }
 
+        /// <summary>
+        /// 退出程序
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void tsmiExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -257,11 +278,15 @@ namespace Scheduler
 
         #endregion
 
-        private void tsmiShow_Click(object sender, EventArgs e)
+        private void biAboutSystem_Click(object sender, EventArgs e)
         {
-            schdulerNotifyIcon_DoubleClick(sender, e);
+            aboutForm.ShowDialog();
         }
 
+        private void biSystemSetting_Click(object sender, EventArgs e)
+        {
+            settingForm.ShowDialog();
+        }
 
     }
 }
