@@ -42,8 +42,8 @@
             this.monthCalendar = new DevComponents.Editors.DateTimeAdv.MonthCalendarAdv();
             this.schdulerNotifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
             this.cmsNotifyIcon = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsmiExit = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiNewAppointment = new System.Windows.Forms.ToolStripMenuItem();
             this.dsaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiGotoToday = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +53,9 @@
             this.tsmiWeekView = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiMonthView = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiTimelineView = new System.Windows.Forms.ToolStripMenuItem();
-            this.显示程序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiShow = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiExit = new System.Windows.Forms.ToolStripMenuItem();
             this.schedulerContextMenuStrip.SuspendLayout();
             this.expandablePanel1.SuspendLayout();
             this.cmsNotifyIcon.SuspendLayout();
@@ -245,23 +247,23 @@
             // cmsNotifyIcon
             // 
             this.cmsNotifyIcon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.显示程序ToolStripMenuItem,
+            this.tsmiShow,
             this.toolStripSeparator3,
+            this.tsmiAbout,
+            this.toolStripSeparator4,
             this.tsmiExit});
             this.cmsNotifyIcon.Name = "cmsNotifyIcon";
-            this.cmsNotifyIcon.Size = new System.Drawing.Size(153, 76);
-            // 
-            // tsmiExit
-            // 
-            this.tsmiExit.Image = global::Scheduler.Properties.Resources.exit;
-            this.tsmiExit.Name = "tsmiExit";
-            this.tsmiExit.Size = new System.Drawing.Size(152, 22);
-            this.tsmiExit.Text = "退出程序";
+            this.cmsNotifyIcon.Size = new System.Drawing.Size(153, 104);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
             // 
             // tsmiNewAppointment
             // 
@@ -334,12 +336,29 @@
             this.tsmiTimelineView.Text = "时间线视图";
             this.tsmiTimelineView.Click += new System.EventHandler(this.tsmiTimelineView_Click);
             // 
-            // 显示程序ToolStripMenuItem
+            // tsmiShow
             // 
-            this.显示程序ToolStripMenuItem.Image = global::Scheduler.Properties.Resources.resize;
-            this.显示程序ToolStripMenuItem.Name = "显示程序ToolStripMenuItem";
-            this.显示程序ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.显示程序ToolStripMenuItem.Text = "显示程序";
+            this.tsmiShow.Image = global::Scheduler.Properties.Resources.resize;
+            this.tsmiShow.Name = "tsmiShow";
+            this.tsmiShow.Size = new System.Drawing.Size(152, 22);
+            this.tsmiShow.Text = "显示程序";
+            this.tsmiShow.Click += new System.EventHandler(this.tsmiShow_Click);
+            // 
+            // tsmiAbout
+            // 
+            this.tsmiAbout.Image = global::Scheduler.Properties.Resources.about;
+            this.tsmiAbout.Name = "tsmiAbout";
+            this.tsmiAbout.Size = new System.Drawing.Size(152, 22);
+            this.tsmiAbout.Text = "关于程序";
+            this.tsmiAbout.Click += new System.EventHandler(this.tsmiAbout_Click);
+            // 
+            // tsmiExit
+            // 
+            this.tsmiExit.Image = global::Scheduler.Properties.Resources.exit;
+            this.tsmiExit.Name = "tsmiExit";
+            this.tsmiExit.Size = new System.Drawing.Size(152, 22);
+            this.tsmiExit.Text = "退出程序";
+            this.tsmiExit.Click += new System.EventHandler(this.tsmiExit_Click);
             // 
             // MainForm
             // 
@@ -389,9 +408,11 @@
         private DevComponents.DotNetBar.Controls.SwitchButton switchButton1;
         private System.Windows.Forms.NotifyIcon schdulerNotifyIcon;
         private System.Windows.Forms.ContextMenuStrip cmsNotifyIcon;
-        private System.Windows.Forms.ToolStripMenuItem 显示程序ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmiShow;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem tsmiExit;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAbout;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
 
     }
 }

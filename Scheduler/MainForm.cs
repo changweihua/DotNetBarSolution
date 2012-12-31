@@ -13,6 +13,12 @@ namespace Scheduler
 {
     public partial class MainForm : Office2007Form
     {
+        #region 全局变量
+
+        AboutForm aboutForm = null;
+
+        #endregion
+
         #region 构造函数
 
         public MainForm()
@@ -34,6 +40,8 @@ namespace Scheduler
             LoadScheduler(DateTime.Now);
             //记录日志
             MainLogger.Instance.Trace("加载主窗体");
+            //实例化关于窗体
+            aboutForm = new AboutForm();
         }
 
         #endregion
@@ -188,6 +196,9 @@ namespace Scheduler
         #endregion
 
 
+        #region 托盘功能区
+
+
         /// <summary>
         /// 双击托盘图标
         /// </summary>
@@ -199,7 +210,14 @@ namespace Scheduler
 
             // Set the WindowState to normal if the form is minimized.
             if (this.WindowState == FormWindowState.Minimized)
+            {
                 this.WindowState = FormWindowState.Maximized;
+            }
+
+            if (aboutForm.WindowState == FormWindowState.Normal)
+            {
+                aboutForm.Close();
+            }
 
             // Activate the form.
             this.Show();
@@ -225,6 +243,25 @@ namespace Scheduler
                 this.Hide();
             }
         }
+
+        private void tsmiAbout_Click(object sender, EventArgs e)
+        {
+            aboutForm.Show();
+        }
+
+        private void tsmiExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Exit();
+        }
+
+        #endregion
+
+        private void tsmiShow_Click(object sender, EventArgs e)
+        {
+            schdulerNotifyIcon_DoubleClick(sender, e);
+        }
+
 
     }
 }

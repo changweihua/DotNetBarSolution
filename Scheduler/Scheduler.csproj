@@ -81,6 +81,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppointmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,11 +123,15 @@
       <DependentUpon>RemindForm.cs</DependentUpon>
     </Compile>
     <Content Include="brand.ico" />
+    <Content Include="images\about.png" />
     <Content Include="images\resize.png" />
     <Content Include="images\exit.png" />
     <Content Include="images\remind.ico" />
     <Content Include="images\choosedate.ico" />
     <Content Include="Northwind.Mapping.xml" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppointmentForm.resx">
       <DependentUpon>AppointmentForm.cs</DependentUpon>
     </EmbeddedResource>
