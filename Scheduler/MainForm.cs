@@ -280,6 +280,8 @@ namespace Scheduler
 
         #endregion
 
+        #region 系统选项区域按钮操作
+
         private void biAboutSystem_Click(object sender, EventArgs e)
         {
             aboutForm.ShowDialog();
@@ -295,5 +297,9 @@ namespace Scheduler
             statusForm.ShowDialog();
         }
 
+
+        #endregion
+
+       
     }
 }

@@ -124,15 +124,17 @@
             // 
             // tsmiNewAppointment
             // 
+            this.tsmiNewAppointment.Image = global::Scheduler.Properties.Resources.newAppointment;
             this.tsmiNewAppointment.Name = "tsmiNewAppointment";
-            this.tsmiNewAppointment.Size = new System.Drawing.Size(146, 22);
+            this.tsmiNewAppointment.Size = new System.Drawing.Size(152, 22);
             this.tsmiNewAppointment.Text = "新约会";
             this.tsmiNewAppointment.Click += new System.EventHandler(this.tsmiNewAppointment_Click);
             // 
             // dsaToolStripMenuItem1
             // 
+            this.dsaToolStripMenuItem1.Image = global::Scheduler.Properties.Resources.newAllDayEvent;
             this.dsaToolStripMenuItem1.Name = "dsaToolStripMenuItem1";
-            this.dsaToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
+            this.dsaToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.dsaToolStripMenuItem1.Text = "全天事件";
             // 
             // toolStripSeparator1
@@ -142,15 +144,17 @@
             // 
             // tsmiGotoToday
             // 
+            this.tsmiGotoToday.Image = global::Scheduler.Properties.Resources.gotoToday;
             this.tsmiGotoToday.Name = "tsmiGotoToday";
-            this.tsmiGotoToday.Size = new System.Drawing.Size(146, 22);
+            this.tsmiGotoToday.Size = new System.Drawing.Size(152, 22);
             this.tsmiGotoToday.Text = "转到今天";
             this.tsmiGotoToday.Click += new System.EventHandler(this.tsmiGotoToday_Click);
             // 
             // tsmiGotoDefinedDay
             // 
+            this.tsmiGotoDefinedDay.Image = global::Scheduler.Properties.Resources.gotoTheDay;
             this.tsmiGotoDefinedDay.Name = "tsmiGotoDefinedDay";
-            this.tsmiGotoDefinedDay.Size = new System.Drawing.Size(146, 22);
+            this.tsmiGotoDefinedDay.Size = new System.Drawing.Size(152, 22);
             this.tsmiGotoDefinedDay.Text = "转到指定日期";
             this.tsmiGotoDefinedDay.Click += new System.EventHandler(this.tsmiGotoDefinedDay_Click);
             // 
@@ -166,8 +170,9 @@
             this.tsmiWeekView,
             this.tsmiMonthView,
             this.tsmiTimelineView});
+            this.tsmiChangeView.Image = global::Scheduler.Properties.Resources.changeView;
             this.tsmiChangeView.Name = "tsmiChangeView";
-            this.tsmiChangeView.Size = new System.Drawing.Size(146, 22);
+            this.tsmiChangeView.Size = new System.Drawing.Size(152, 22);
             this.tsmiChangeView.Text = "改变视图";
             // 
             // tsmiDayView
@@ -352,7 +357,7 @@
             this.navigationPanePanel1.Location = new System.Drawing.Point(0, 0);
             this.navigationPanePanel1.Name = "navigationPanePanel1";
             this.navigationPanePanel1.ParentItem = this.biLoadScheduler;
-            this.navigationPanePanel1.Size = new System.Drawing.Size(252, 280);
+            this.navigationPanePanel1.Size = new System.Drawing.Size(252, 312);
             this.navigationPanePanel1.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.navigationPanePanel1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.navigationPanePanel1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
@@ -504,33 +509,33 @@
             // 
             this.tsmiShow.Image = global::Scheduler.Properties.Resources.resize;
             this.tsmiShow.Name = "tsmiShow";
-            this.tsmiShow.Size = new System.Drawing.Size(122, 22);
+            this.tsmiShow.Size = new System.Drawing.Size(152, 22);
             this.tsmiShow.Text = "显示程序";
             this.tsmiShow.Click += new System.EventHandler(this.tsmiShow_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(119, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
             // 
             // tsmiAbout
             // 
             this.tsmiAbout.Image = global::Scheduler.Properties.Resources.about1;
             this.tsmiAbout.Name = "tsmiAbout";
-            this.tsmiAbout.Size = new System.Drawing.Size(122, 22);
+            this.tsmiAbout.Size = new System.Drawing.Size(152, 22);
             this.tsmiAbout.Text = "关于程序";
             this.tsmiAbout.Click += new System.EventHandler(this.tsmiAbout_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(119, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
             // 
             // tsmiExit
             // 
             this.tsmiExit.Image = global::Scheduler.Properties.Resources.exit;
             this.tsmiExit.Name = "tsmiExit";
-            this.tsmiExit.Size = new System.Drawing.Size(122, 22);
+            this.tsmiExit.Size = new System.Drawing.Size(152, 22);
             this.tsmiExit.Text = "退出程序";
             this.tsmiExit.Click += new System.EventHandler(this.tsmiExit_Click);
             // 
