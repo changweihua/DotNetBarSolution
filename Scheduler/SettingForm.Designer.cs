@@ -32,8 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingForm));
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
             this.superTabControlPanel3 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.checkBoxX3 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.labelX4 = new DevComponents.DotNetBar.LabelX();
             this.panel2 = new System.Windows.Forms.Panel();
             this.checkBoxX8 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.checkBoxX7 = new DevComponents.DotNetBar.Controls.CheckBoxX();
@@ -43,27 +44,26 @@
             this.checkBoxX5 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.checkBoxX4 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.checkBoxX1 = new DevComponents.DotNetBar.Controls.CheckBoxX();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBoxX3 = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.switchButton2 = new DevComponents.DotNetBar.Controls.SwitchButton();
-            this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX2 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem3 = new DevComponents.DotNetBar.SuperTabItem();
+            this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.switchButton1 = new DevComponents.DotNetBar.Controls.SwitchButton();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
             this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.superTabItem2 = new DevComponents.DotNetBar.SuperTabItem();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
             this.superTabControlPanel3.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.superTabControlPanel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // superTabControl1
@@ -87,8 +87,8 @@
             this.superTabControl1.ControlBox.MenuBox,
             this.superTabControl1.ControlBox.CloseBox});
             this.superTabControl1.Controls.Add(this.superTabControlPanel3);
-            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Controls.Add(this.superTabControlPanel2);
+            this.superTabControl1.Controls.Add(this.superTabControlPanel1);
             this.superTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.superTabControl1.ImageList = this.imageList1;
             this.superTabControl1.Location = new System.Drawing.Point(0, 0);
@@ -121,29 +121,43 @@
             this.superTabControlPanel3.TabIndex = 0;
             this.superTabControlPanel3.TabItem = this.superTabItem3;
             // 
-            // panel3
+            // panel4
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.checkBoxX3);
-            this.panel3.Location = new System.Drawing.Point(289, 12);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(366, 29);
-            this.panel3.TabIndex = 5;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.labelX3);
+            this.panel4.Controls.Add(this.labelX4);
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Location = new System.Drawing.Point(3, 44);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(752, 101);
+            this.panel4.TabIndex = 6;
             // 
-            // checkBoxX3
+            // labelX3
             // 
-            this.checkBoxX3.BackColor = System.Drawing.Color.Transparent;
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
             // 
             // 
             // 
-            this.checkBoxX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.checkBoxX3.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
-            this.checkBoxX3.Location = new System.Drawing.Point(3, 3);
-            this.checkBoxX3.Name = "checkBoxX3";
-            this.checkBoxX3.Size = new System.Drawing.Size(100, 23);
-            this.checkBoxX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.checkBoxX3.TabIndex = 4;
-            this.checkBoxX3.Text = "周末";
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Location = new System.Drawing.Point(9, 18);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(100, 22);
+            this.labelX3.TabIndex = 2;
+            this.labelX3.Text = "提醒周期范围";
+            // 
+            // labelX4
+            // 
+            this.labelX4.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX4.Location = new System.Drawing.Point(9, 66);
+            this.labelX4.Name = "labelX4";
+            this.labelX4.Size = new System.Drawing.Size(100, 22);
+            this.labelX4.TabIndex = 2;
+            this.labelX4.Text = "提醒时间范围";
             // 
             // panel2
             // 
@@ -279,6 +293,30 @@
             this.checkBoxX1.TabIndex = 4;
             this.checkBoxX1.Text = "全部";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.checkBoxX3);
+            this.panel3.Location = new System.Drawing.Point(289, 12);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(366, 29);
+            this.panel3.TabIndex = 5;
+            // 
+            // checkBoxX3
+            // 
+            this.checkBoxX3.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.checkBoxX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.checkBoxX3.CheckBoxStyle = DevComponents.DotNetBar.eCheckBoxStyle.RadioButton;
+            this.checkBoxX3.Location = new System.Drawing.Point(3, 3);
+            this.checkBoxX3.Name = "checkBoxX3";
+            this.checkBoxX3.Size = new System.Drawing.Size(100, 23);
+            this.checkBoxX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.checkBoxX3.TabIndex = 4;
+            this.checkBoxX3.Text = "周末";
+            // 
             // switchButton2
             // 
             // 
@@ -293,32 +331,6 @@
             this.switchButton2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.switchButton2.SwitchWidth = 65;
             this.switchButton2.TabIndex = 3;
-            // 
-            // labelX4
-            // 
-            this.labelX4.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX4.Location = new System.Drawing.Point(9, 66);
-            this.labelX4.Name = "labelX4";
-            this.labelX4.Size = new System.Drawing.Size(100, 22);
-            this.labelX4.TabIndex = 2;
-            this.labelX4.Text = "提醒时间范围";
-            // 
-            // labelX3
-            // 
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Location = new System.Drawing.Point(9, 18);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(100, 22);
-            this.labelX3.TabIndex = 2;
-            this.labelX3.Text = "提醒周期范围";
             // 
             // labelX2
             // 
@@ -341,14 +353,33 @@
             this.superTabItem3.Name = "superTabItem3";
             this.superTabItem3.Text = "提醒";
             // 
+            // superTabControlPanel1
+            // 
+            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 30);
+            this.superTabControlPanel1.Name = "superTabControlPanel1";
+            this.superTabControlPanel1.Size = new System.Drawing.Size(758, 318);
+            this.superTabControlPanel1.TabIndex = 1;
+            this.superTabControlPanel1.TabItem = this.superTabItem2;
+            // 
+            // superTabItem2
+            // 
+            this.superTabItem2.AttachedControl = this.superTabControlPanel1;
+            this.superTabItem2.GlobalItem = false;
+            this.superTabItem2.ImageIndex = 0;
+            this.superTabItem2.ItemAlignment = DevComponents.DotNetBar.eItemAlignment.Center;
+            this.superTabItem2.Name = "superTabItem2";
+            this.superTabItem2.Text = "数据";
+            this.superTabItem2.TextAlignment = DevComponents.DotNetBar.eItemAlignment.Center;
+            // 
             // superTabControlPanel2
             // 
             this.superTabControlPanel2.Controls.Add(this.switchButton1);
             this.superTabControlPanel2.Controls.Add(this.labelX1);
             this.superTabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 0);
+            this.superTabControlPanel2.Location = new System.Drawing.Point(0, 30);
             this.superTabControlPanel2.Name = "superTabControlPanel2";
-            this.superTabControlPanel2.Size = new System.Drawing.Size(758, 348);
+            this.superTabControlPanel2.Size = new System.Drawing.Size(758, 318);
             this.superTabControlPanel2.TabIndex = 0;
             this.superTabControlPanel2.TabItem = this.superTabItem1;
             // 
@@ -390,25 +421,6 @@
             this.superTabItem1.Name = "superTabItem1";
             this.superTabItem1.Text = "启动";
             // 
-            // superTabControlPanel1
-            // 
-            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(0, 30);
-            this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(758, 318);
-            this.superTabControlPanel1.TabIndex = 1;
-            this.superTabControlPanel1.TabItem = this.superTabItem2;
-            // 
-            // superTabItem2
-            // 
-            this.superTabItem2.AttachedControl = this.superTabControlPanel1;
-            this.superTabItem2.GlobalItem = false;
-            this.superTabItem2.ImageIndex = 0;
-            this.superTabItem2.ItemAlignment = DevComponents.DotNetBar.eItemAlignment.Center;
-            this.superTabItem2.Name = "superTabItem2";
-            this.superTabItem2.Text = "数据";
-            this.superTabItem2.TextAlignment = DevComponents.DotNetBar.eItemAlignment.Center;
-            // 
             // imageList1
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
@@ -416,18 +428,6 @@
             this.imageList1.Images.SetKeyName(0, "data.png");
             this.imageList1.Images.SetKeyName(1, "start.png");
             this.imageList1.Images.SetKeyName(2, "bell.png");
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.Controls.Add(this.labelX3);
-            this.panel4.Controls.Add(this.labelX4);
-            this.panel4.Controls.Add(this.panel2);
-            this.panel4.Controls.Add(this.panel1);
-            this.panel4.Location = new System.Drawing.Point(3, 44);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(752, 101);
-            this.panel4.TabIndex = 6;
             // 
             // SettingForm
             // 
@@ -444,11 +444,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
             this.superTabControlPanel3.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.superTabControlPanel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
