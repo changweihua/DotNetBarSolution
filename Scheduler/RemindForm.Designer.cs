@@ -28,14 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RemindForm));
             this.SuspendLayout();
-            // 
-            // styleManager1
-            // 
-            this.styleManager1.ManagerStyle = DevComponents.DotNetBar.eStyle.VisualStudio2010Blue;
-            this.styleManager1.MetroColorParameters = new DevComponents.DotNetBar.Metro.ColorTables.MetroColorGeneratorParameters(System.Drawing.Color.White, System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(163)))), ((int)(((byte)(26))))));
             // 
             // RemindForm
             // 
@@ -45,10 +39,11 @@
             this.DoubleBuffered = true;
             this.EnableGlass = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "RemindForm";
-            this.Text = "RemindForm";
+            this.Text = "提醒";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RemindForm_FormClosing);
             this.Load += new System.EventHandler(this.RemindForm_Load);
             this.ResumeLayout(false);
@@ -57,7 +52,6 @@
 
         #endregion
 
-        private DevComponents.DotNetBar.StyleManager styleManager1;
 
     }
 }

@@ -502,6 +502,7 @@
             // 
             // tsmiShow
             // 
+            this.tsmiShow.Image = global::Scheduler.Properties.Resources.resize;
             this.tsmiShow.Name = "tsmiShow";
             this.tsmiShow.Size = new System.Drawing.Size(122, 22);
             this.tsmiShow.Text = "显示程序";
@@ -514,6 +515,7 @@
             // 
             // tsmiAbout
             // 
+            this.tsmiAbout.Image = global::Scheduler.Properties.Resources.about1;
             this.tsmiAbout.Name = "tsmiAbout";
             this.tsmiAbout.Size = new System.Drawing.Size(122, 22);
             this.tsmiAbout.Text = "关于程序";
@@ -526,6 +528,7 @@
             // 
             // tsmiExit
             // 
+            this.tsmiExit.Image = global::Scheduler.Properties.Resources.exit;
             this.tsmiExit.Name = "tsmiExit";
             this.tsmiExit.Size = new System.Drawing.Size(122, 22);
             this.tsmiExit.Text = "退出程序";
