@@ -47,6 +47,7 @@ namespace Scheduler
             aboutForm = new AboutForm();
             settingForm = new SettingForm();
             statusForm = new StatusForm();
+            new ToolForm().Show();
         }
 
         #endregion
